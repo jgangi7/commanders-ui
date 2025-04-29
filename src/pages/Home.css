@@ -2,18 +2,10 @@
   background: #ededed;
   padding: 2rem;
   margin-top: 2rem;
+  min-width: 80vw;
 }
 
 .follow-us-section h2 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: 0 0 1.2rem 0;
-  padding-left: 0.5rem;
-  border-bottom: 2px solid #d3d3d3;
-  padding-bottom: 0.5rem;
-}
-
-.instagram-section h2 {
   font-size: 1.2rem;
   font-weight: bold;
   margin: 0 0 1.2rem 0;
@@ -349,16 +341,22 @@
 .main-section {
   background: #ededed;
   padding: 2rem 0 2.5rem 0;
-  margin: 0 auto 2rem auto;
+  border-radius: 0;
+  min-width: 80vw;
+}
+
+.section-content {
   width: 100%;
   max-width: 900px;
-  border-radius: 0;
+  margin: 0 auto;
 }
 
 @media (max-width: 900px) {
   .main-section {
-    max-width: 98vw;
     padding: 1.2rem 0 1.5rem 0;
+  }
+  .section-content {
+    max-width: 98vw;
   }
 }
 
@@ -366,4 +364,33 @@
   .main-section {
     padding: 1rem 0 1rem 0;
   }
-} 
+  .section-content {
+    max-width: 100vw;
+  }
+}
+
+.podcast-section h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 1.2rem 0;
+  padding-left: 0.5rem;
+  border-bottom: 2px solid #d3d3d3;
+  padding-bottom: 0.5rem;
+}
+
+.podcast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.podcast-img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  border: 1px solid #e0e0e0;
+}

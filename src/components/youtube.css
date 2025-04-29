@@ -1,10 +1,10 @@
 .youtube-carousel-container {
-    max-width: 800px;
-    height: 500px;
+    width: 60vw;
+    height: 60vh;
     margin: 0 auto;
     position: relative;
     margin-top: 7rem;
-    margin-bottom: 7rem;
+    margin-bottom: 7rem; 
   }
   
   .slider-container {
