@@ -1,0 +1,369 @@
+.follow-us-section {
+  background: #ededed;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.follow-us-section h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 1.2rem 0;
+  padding-left: 0.5rem;
+  border-bottom: 2px solid #d3d3d3;
+  padding-bottom: 0.5rem;
+}
+
+.instagram-section h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 1.2rem 0;
+  padding-left: 0.5rem;
+  border-bottom: 2px solid #d3d3d3;
+  padding-bottom: 0.5rem;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem 1.2rem;
+  margin-top: 1rem;
+}
+
+.social-card {
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  padding: 1rem 1.2rem;
+  text-decoration: none;
+  color: #111;
+  transition: box-shadow 0.2s;
+  min-height: 70px;
+}
+
+.social-card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border-color: #bdbdbd;
+}
+
+.social-icon {
+  margin-right: 1rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-title {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.01em;
+}
+
+.social-desc {
+  font-size: 0.92rem;
+  color: #222;
+  opacity: 0.8;
+}
+
+.social-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .social-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .social-grid {
+    grid-template-columns: 1fr;
+  }
+  .follow-us-section {
+    padding: 1.2rem 0 1.5rem 0;
+  }
+}
+
+.newsletter-section {
+  background: #ededed;
+  padding: 5rem 0 2.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter-header {
+  background: #fff;
+  padding: 0.7rem 2.5rem;
+  margin-bottom: 2rem;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-header span {
+  background: #FFB612;
+  color: #5A1414;
+  font-weight: bold;
+  font-size: 1.15rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2px;
+  letter-spacing: 0.03em;
+  font-family: 'Oswald', 'Arial Black', Arial, sans-serif;
+}
+
+.newsletter-form {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter-fields {
+  display: flex;
+  width: 100%;
+  gap: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.newsletter-field {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-field label {
+  font-weight: bold;
+  color: #5A1414;
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+}
+
+.newsletter-field input,
+.newsletter-field select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-size: 1rem;
+  background: #fff;
+}
+
+.newsletter-terms {
+  display: flex;
+  align-items: flex-start;
+  font-size: 0.92rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.newsletter-terms input[type="checkbox"] {
+  margin-right: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.newsletter-terms label {
+  font-weight: normal;
+  color: #555;
+}
+
+.newsletter-desc {
+  font-size: 0.92rem;
+  color: #444;
+  margin-bottom: 1.2rem;
+  width: 100%;
+}
+
+.newsletter-links a {
+  color: #5A1414;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.newsletter-submit {
+  background: #5A1414;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: normal;
+  border: none;
+  border-radius: 2px;
+  padding: 0.6rem 3.5rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+
+.newsletter-submit:hover {
+  background: #7a2323;
+}
+
+@media (max-width: 900px) {
+  .newsletter-fields {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .newsletter-form {
+    max-width: 98vw;
+  }
+}
+
+.more-headlines-section {
+  background: #ededed;
+  padding: 2rem 0 2.5rem 0;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  border-radius: 0;
+}
+
+.more-headlines-section h2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0 0 1.2rem 0;
+  padding-left: 0.5rem;
+  border-bottom: 2px solid #d3d3d3;
+  padding-bottom: 0.5rem;
+  letter-spacing: 0.01em;
+}
+
+.headlines-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin: 1.2rem 0 2rem 0;
+}
+
+.headline-card {
+  background: #fff;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 1rem 1.2rem;
+  border: none;
+  box-shadow: none;
+  min-height: 60px;
+}
+
+.headline-img {
+  width: 70px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.headline-title {
+  font-weight: bold;
+  font-size: 1.05rem;
+  color: #111;
+  line-height: 1.2;
+}
+
+.more-articles-btn {
+  width: 100%;
+  background: #5A1414;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: normal;
+  border: none;
+  border-radius: 2px;
+  padding: 0.8rem 0;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+  letter-spacing: 0.04em;
+}
+
+.more-articles-btn:hover {
+  background: #7a2323;
+}
+
+@media (max-width: 900px) {
+  .more-headlines-section {
+    max-width: 98vw;
+    padding: 1.2rem 0 1.5rem 0;
+  }
+  .headline-img {
+    width: 55px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .more-headlines-section {
+    padding: 1rem 0 1rem 0;
+  }
+  .headline-card {
+    padding: 0.7rem 0.5rem;
+    gap: 0.7rem;
+  }
+  .headline-title {
+    font-size: 0.98rem;
+  }
+}
+
+.instagram-carousel-section {
+  background: #ededed;
+  padding: 2rem 0 1.5rem 0;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+@media (max-width: 600px) {
+  .instagram-carousel-section {
+    padding: 1rem 0 0.5rem 0;
+  }
+  .carousel-img-link {
+    min-width: 80px;
+    max-width: 80px;
+    height: 80px;
+  }
+  .carousel-header span {
+    font-size: 1rem;
+  }
+}
+
+.main-section {
+  background: #ededed;
+  padding: 2rem 0 2.5rem 0;
+  margin: 0 auto 2rem auto;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 0;
+}
+
+@media (max-width: 900px) {
+  .main-section {
+    max-width: 98vw;
+    padding: 1.2rem 0 1.5rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-section {
+    padding: 1rem 0 1rem 0;
+  }
+} 

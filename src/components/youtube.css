@@ -1,0 +1,120 @@
+.youtube-carousel-container {
+    max-width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+  
+  .slider-container {
+    height: 100%;
+    position: relative;
+  }
+  
+  .slide {
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+  
+  .left-arrow, .right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 45px;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+  
+  .left-arrow:hover, .right-arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .left-arrow {
+    left: 15px;
+  }
+  
+  .right-arrow {
+    right: 15px;
+  }
+  
+  .dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .dot {
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #c4c4c4;
+    transition: color 0.3s;
+  }
+  
+  .dot.active {
+    color: #555;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .youtube-carousel-container {
+      height: 350px;
+    }
+    
+    .left-arrow, .right-arrow {
+      font-size: 30px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .youtube-carousel-container {
+      height: 250px;
+    }
+    
+    .left-arrow, .right-arrow {
+      font-size: 25px;
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .youtube-carousel-container h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 0 1.2rem 0;
+    padding-left: 0.5rem;
+    border-bottom: 2px solid #d3d3d3;
+    padding-bottom: 0.5rem;
+  }
