@@ -72,6 +72,30 @@ const Home: React.FC = () => {
           allowFullScreen
           style={{ position: 'absolute', top: 0, left: 0, width: '100vw', height: '100vh', pointerEvents: 'none', zIndex: 1 }}
         ></iframe>
+        <div
+          className="archivo-black-regular"
+          style={{
+            position: 'absolute',
+            bottom: '3vw',
+            right: '4vw',
+            zIndex: 2,
+            color: '#FFB612',
+            fontSize: '4rem',
+            textShadow: '2px 2px 8px #000, 4px 4px 0 #5A1414',
+            letterSpacing: '0.1em',
+            pointerEvents: 'none',
+            userSelect: 'none',
+            fontWeight: 1100,
+            fontStyle: 'normal',
+          }}
+        >
+          <div>
+            RAISE HAIL
+          </div>
+          <div>
+            DEFEND THE DISTRICT
+          </div>
+        </div>
       </div>
 
       {/* YouTube Section */}
