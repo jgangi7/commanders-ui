@@ -36,7 +36,7 @@ code {
   margin: 0;
   padding: 0 1rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   min-height: 64px;
   box-sizing: border-box;
@@ -57,13 +57,14 @@ code {
 
 .nav-menu {
   display: flex;
-  flex: 1 1 0;
+  flex: 0 1 auto;
   list-style: none;
   gap: 1.2rem;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
   white-space: normal;
+  justify-content: center;
 }
 
 .nav-item {

@@ -1,7 +1,7 @@
 import './Home.css';
 import InstagramGrid from '../components/instagramGrid';
 import YouTubeCarousel from '../components/youtube';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -37,18 +37,51 @@ const Home: React.FC = () => {
     { src: '/images/podcast10.png', alt: 'Press Pass' },
   ];
 
+  useEffect(() => {
+    const setPlaybackRate = () => {
+      const iframe = document.getElementById('welcome-video') as HTMLIFrameElement;
+      if (iframe && iframe.contentWindow) {
+        iframe.contentWindow.postMessage(
+          JSON.stringify({
+            event: 'command',
+            func: 'setPlaybackRate',
+            args: [1.5],
+          }),
+          '*'
+        );
+      }
+    };
+    // Try to set playback rate after a short delay
+    const interval = setInterval(setPlaybackRate, 1000);
+    setTimeout(() => clearInterval(interval), 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="home-container">
-
+      {/* Welcome Section */}
+      <div style={{ width: '100vw', height: '100vh', overflow: 'hidden', position: 'relative' }}>
+        <iframe
+          id="welcome-video"
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/yIQRWCEbtQ0?autoplay=1&mute=1&loop=1&playlist=yIQRWCEbtQ0&controls=0&showinfo=0&modestbranding=1&rel=0"
+          title="Welcome Video"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+          style={{ position: 'absolute', top: 0, left: 0, width: '100vw', height: '100vh', pointerEvents: 'none', zIndex: 1 }}
+        ></iframe>
+      </div>
 
       {/* YouTube Section */}
       <div className="main-section youtube-section">
         <YouTubeCarousel videoIds={youtubeVideoIds} />
       </div>
 
-        {/* Podcast Section */}
-        <div className="main-section podcast-section">
-          <div className="section-content">
+      {/* Podcast Section */}
+      <div className="main-section podcast-section">
+        <div className="section-content">
             <h2>Commanders Podcast Network</h2>
             <Slider
               dots={true}
@@ -70,8 +103,8 @@ const Home: React.FC = () => {
                 </div>
               ))}
             </Slider>
-          </div>
         </div>
+      </div>
 
       {/* Instagram Section */}
       <div className="main-section instagram-section">
@@ -126,6 +159,7 @@ const Home: React.FC = () => {
           </form>
         </div>
       </div>
+
       {/* Follow Us Section */}
       <div className="main-section follow-us-section mx-4">
         <div className="section-content">
