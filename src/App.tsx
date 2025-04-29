@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
+import Footer from './components/Footer';
 
 // Import page components
 import Home from './pages/Home';
@@ -102,6 +103,7 @@ const App: React.FC = () => {
           <Route path="/watch" element={<Watch />} />
           <Route path="/pro-shop" element={<ProShop />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

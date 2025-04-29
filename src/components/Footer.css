@@ -1,0 +1,131 @@
+.site-footer {
+  width: 100vw;
+  background: #111;
+  color: #fff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin-top: 2rem;
+}
+
+.footer-main {
+  background: #111;
+  padding: 2.5rem 0 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+  max-width: 180px;
+  gap: 0.4rem;
+}
+
+.footer-title {
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+}
+
+.footer-col a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.97rem;
+  margin-bottom: 0.2rem;
+  transition: color 0.2s;
+}
+
+.footer-col a:hover {
+  color: #FFB612;
+}
+
+.footer-download {
+  width: 100%;
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.footer-download a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-bottom {
+  background: #5A1414;
+  color: #fff;
+  padding: 1.2rem 0 0.7rem 0;
+  text-align: center;
+}
+
+.footer-bottom-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.2rem;
+  margin-bottom: 0.7rem;
+}
+
+.footer-bottom-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+
+.footer-bottom-links a:hover {
+  color: #FFB612;
+}
+
+.footer-copyright {
+  font-size: 0.95rem;
+  color: #fff;
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 1100px) {
+  .footer-columns {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .footer-col {
+    min-width: 180px;
+    max-width: 100%;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-main {
+    padding: 1.2rem 0 1rem 0;
+  }
+  .footer-columns {
+    gap: 1rem;
+  }
+  .footer-bottom-links {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+} 
