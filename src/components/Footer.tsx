@@ -21,6 +21,14 @@ const Footer: React.FC = () => (
           <a href="/video">Podcasts</a>
         </div>
         <div className="footer-col">
+          <div className="footer-title">PHOTO</div>
+          <a href="/pro-shop">Latest Photos</a>
+          <a href="/pro-shop">Gameday</a>
+          <a href="/pro-shop">Practice</a>
+          <a href="/pro-shop">Community</a>
+          <a href="/pro-shop">Fans</a>
+        </div>
+        <div className="footer-col">
           <div className="footer-title">TEAM</div>
           <a href="/roster">Roster</a>
           <a href="/schedule">Schedule</a>
@@ -39,12 +47,19 @@ const Footer: React.FC = () => (
         <div className="footer-col">
           <div className="footer-title">TICKETS</div>
           <a href="/tickets">Member Login</a>
-          <a href="/tickets">Season Tickets</a>
+          <a href="/season-tickets">Season Tickets</a>
           <a href="/tickets">Premium Tickets</a>
           <a href="/tickets">Single Game Tickets</a>
-          <a href="/tickets">Suites</a>
+          <a href="/suites">Suites</a>
           <a href="/tickets">Member Information</a>
           <a href="/tickets">On Location Travel</a>
+        </div>
+        <div className="footer-col">
+          <div className="footer-title">MORE</div>
+          <a href="/watch">Watch</a>
+          <a href="/pro-shop">Pro Shop</a>
+          <a href="/new-stadium">New Stadium</a>
+          <a href="/draft">Draft</a>
         </div>
       </div>  
     </div>
