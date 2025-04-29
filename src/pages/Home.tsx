@@ -85,8 +85,7 @@ const Home: React.FC = () => {
             letterSpacing: '0.1em',
             pointerEvents: 'none',
             userSelect: 'none',
-            fontWeight: 1100,
-            fontStyle: 'normal',
+            fontWeight: 'bold',
           }}
         >
           <div>
