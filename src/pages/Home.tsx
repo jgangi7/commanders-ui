@@ -105,7 +105,7 @@ const Home: React.FC = () => {
       {/* Podcast Section */}
       <div className="main-section podcast-section">
         <div className="section-content">
-            <h2>Commanders Podcast Network</h2>
+            <h2 className="archivo-black-regular" >Commanders Podcast Network</h2>
             <Slider
               dots={true}
               infinite={false}
@@ -186,7 +186,7 @@ const Home: React.FC = () => {
       {/* Follow Us Section */}
       <div className="main-section follow-us-section mx-4">
         <div className="section-content">
-          <h2>Follow Us</h2>
+          <h2 className="archivo-black-regular">Follow Us</h2>
           <div className="social-grid">
             <a className="social-card" href="https://www.facebook.com/commanders" target="_blank" rel="noopener noreferrer">
               <span className="social-icon">{/* Facebook SVG */}

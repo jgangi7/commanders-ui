@@ -30,7 +30,7 @@ const YouTubeCarousel: React.FC<YouTubeCarouselProps> = ({
 
   return (
     <div className="youtube-carousel-container">
-        <h2>YouTube</h2>
+        <h2 className="archivo-black-regular">YouTube</h2>
       <div className="slider-container">
         <div className="left-arrow" onClick={goToPrevious}>
           ❰

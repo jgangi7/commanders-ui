@@ -75,7 +75,7 @@ const InstagramGrid: React.FC<InstagramGridProps> = ({ postIds }) => {
 
   return (
     <div className="instagram-grid-container">
-      <h2>Instagram</h2>
+      <h2 className="archivo-black-regular">Instagram</h2>
       <Slider ref={sliderRef} {...sliderSettings}>
         {postIds.map((postId, index) => (
           <div
